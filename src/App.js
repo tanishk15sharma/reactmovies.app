@@ -109,11 +109,28 @@ export default function App() {
   return (
     <div className="App">
       <h1> The picture-show 🎥 </h1>
-      <h2 style={{ fontSize: "large" }}>
+      <h2 style={{ fontSize: "large", color: "#737373" }}>
         {" "}
-        Hey <strong> movie freak !</strong> Select a genre and look into it.{" "}
+        Hey <span class="head"> movie freak !</span> Select a genre and look
+        into it.{" "}
       </h2>
-
+      <img class="img" src="https://cdn.wallpapersafari.com/84/2/re9TML.jpg" />
+      <img
+        class="img"
+        src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2020/09/23/Pictures/_de73d5ec-fda1-11ea-ac1a-6982f7a91a4b.jpg"
+      />
+      <img
+        class="img"
+        src="https://images.theconversation.com/files/410786/original/file-20210712-70807-bxgarp.png?ixlib=rb-1.1.0&rect=0%2C60%2C1917%2C957&q=45&auto=format&w=668&h=324&fit=crop"
+      />
+      <img
+        class="img"
+        src="https://images.indianexpress.com/2020/05/shutter-island-759.jpg"
+      />
+      <img
+        class="img"
+        src="https://image.shutterstock.com/mosaic_250/167816588/550487773/stock-photo-couple-hugging-on-a-pier-550487773.jpg"
+      />
       <div>
         {Object.keys(movielist).map((genre) => (
           <button
@@ -139,7 +156,7 @@ export default function App() {
               key={book.name}
               style={{
                 listStyle: "none",
-                padding: "0.5rem",
+                padding: "0.3rem",
                 border: "1px solid #D1D5DB",
                 width: "40%",
                 margin: "1rem 24rem",
